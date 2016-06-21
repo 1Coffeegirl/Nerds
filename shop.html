@@ -7,150 +7,153 @@
 </head>
 <body>
 	<header>
-		<div class="main-header">
-			<a href="index.html">
-				<img class="logo" src="img/logo-nerds.png" alt="logo-nerds" width="139" height="56">
-			</a>
-			<nav class="main-nav">
-				<ul>
-					<li><a href="#">Студия</a></li>
-					<li><a href="#">Клиенты</a></li>
-					<li><a href="shop.html">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</nav>
-			<div class="user-block">
-				<a href="#" class="basket">
-					Корзина
+		<div class="contaner">
+			<div class="main-header clearfix">
+				<a href="index.html">
+					<img class="logo" src="img/logo-nerds.png" alt="logo-nerds" width="139" height="56">
 				</a>
+				<nav class="main-nav">
+					<ul>
+						<li><a href="#">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li><a href="shop.html">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="user-block">
+					<a href="#" class="basket">
+						Корзина
+					</a>
+				</div>
 			</div>
-		</div>
-		<div class="shop-title clearfix">
-			<b>Добро пожаловать в магазин <br> готовых макетов</b>
+			<div class="shop-title clearfix">
+				<b>Добро пожаловать в магазин <br> готовых макетов</b>
+			</div>
 		</div>
 	</header>
 	<main>
-		<div class="main-contaner">
-			<div class="upper-part">
-				<div class="price">
-					<h2>Стоимость:</h2>	
-				</div>
-				<div class="sort-by">
-					<ul>
-						<li>Сортировать:</li>
-						<li>по цене</li>
-						<li>по типу</li>
-						<li>по функционалу</li>
-					</ul>
-					<div class="arrow">
+		<div class="main-contaner clearfix">
+		
+				<div class="upper-part">
+					<div class="price">
+						<h2>Стоимость:</h2>	
+					</div>
+					<div class="sort-by">
 						<ul>
-							<li>
-								<a class="arrow-up" href="#"></a>
-							</li>
-							<li>
-								<a class="arrow-down" href=""></a>
-							</li>
+							<li>Сортировать:</li>
+							<li>по цене</li>
+							<li>по типу</li>
+							<li>по функционалу</li>
 						</ul>
+						<div class="arrow">
+							<ul>
+								<li>
+									<a class="arrow-up" href="#"></a>
+								</li>
+								<li>
+									<a class="arrow-down" href=""></a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="left-column clearfix">
-				<form action="form.php" method="GET">
-					<div class="range-filter">
-						<div class="range-controls">
-							<div class="scale">
-								<div class="bar" style="margin-left: 20%; width: 30%"></div>
+				<div class="left-column clearfix">
+					<form action="form.php" method="GET">
+						<div class="range-filter">
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar" style="margin-left: 20%; width: 30%"></div>
+								</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
 							</div>
-								<div class="toggle toggle-min"></div>
-								<div class="toggle toggle-max"></div>
+							<div class="price-controls">
+								<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+								<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+							</div>
 						</div>
-						<div class="price-controls">
-							<label class="min-price">от <input name="min-price" type="text" value="0"></label>
-							<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+						<div class="web">
+							<h2>Сетка</h2>
+							<label for="adaptive">
+								<input type="radio" name="adaptive" id="adaptive" checked>Адаптативная</label><br>
+							<label for="fix">
+								<input type="radio" name="fix" id="fix">Фиксированная</label>
+							<label><br>
+								<input type="radio" name="rubber" id="rubber">Резиновая</label>
+						</div>
+						<div class="special">
+							<h2>Особенности</h2>
+							<label for="slider">
+								<input type="checkbox" name="slider" id="slider" checked>Слайдер</label><br>
+							<label for="features">
+								<input type="checkbox" name="features" id="features">Блок преимуществ</label><br>
+							<label for="news">
+								<input type="checkbox" name="news" id="news" checked>Новости</label><br>
+							<label for="gallery">
+								<input type="checkbox" name="gallery" id="gallery">Галерея</label><br>
+							<label for="cart">
+								<input type="checkbox" name="cart" id="cart">Корзина</label>
+						</div>
+						<input type="submit" value="Показать">
+					</form>
+				</div>
+				
+				<div class="items">
+					<div class="item">
+						<img src="img/aviator.jpg" width="240" height="240" alt="aviator">
+						<div class="description">
+							<h3>AVIATOR</h3>
+							<p>Одностраничный макет с авторским дизайном</p>
+							<a class="price" href="#">8000 Р.</a>
 						</div>
 					</div>
-					<div class="web">
-						<h2>Сетка</h2>
-						<label for="adaptive">
-							<input type="radio" name="adaptive" id="adaptive" checked>Адаптативная</label><br>
-						<label for="fix">
-							<input type="radio" name="fix" id="fix">Фиксированная</label>
-						<label><br>
-							<input type="radio" name="rubber" id="rubber">Резиновая</label>
+					<div class="item">
+						<img src="img/sunset.jpg" width="240" height="240" alt="sunset">
+						<div class="description">
+							<h3>SUNSET</h3>
+							<p>Интернет-магазин с личным кабинетом</p>
+							<a class="price" href="#">10 000 Р.</a>
+						</div>
 					</div>
-					<div class="special">
-						<h2>Особенности</h2>
-						<label for="slider">
-							<input type="checkbox" name="slider" id="slider" checked>Слайдер</label><br>
-						<label for="features">
-							<input type="checkbox" name="features" id="features">Блок преимуществ</label><br>
-						<label for="news">
-							<input type="checkbox" name="news" id="news" checked>Новости</label><br>
-						<label for="gallery">
-							<input type="checkbox" name="gallery" id="gallery">Галерея</label><br>
-						<label for="cart">
-							<input type="checkbox" name="cart" id="cart">Корзина</label>
+					<div class="item">
+						<img src="img/forte.jpg" width="240" height="240" alt="forte">
+						<div class="description">
+							<h3>FORTE</h3>
+							<p>Отличный макет для личного блога</p>
+							<a class="price" href="#">5000 Р.</a>
+						</div>
 					</div>
-					<input type="submit" value="Показать">
-				</form>
-			</div>
-			
-			<div class="items">
-				<div class="item">
-					<img src="img/aviator.jpg" width="240" height="240" alt="aviator">
-					<div class="description">
-						<h3>AVIATOR</h3>
-						<p>Одностраничный макет с авторским дизайном</p>
-						<a class="price" href="#">8000 Р.</a>
+					<div class="item">
+						<img src="img/organic.jpg" width="240" height="240" alt="organicr">
+						<div class="description">
+							<h3>Modern Organic Food</h3>
+							<p>Сайт для ресторана быстрого питания</p>
+							<a class="price" href="#">12000 Р.</a>
+						</div>
 					</div>
-				</div>
-				<div class="item">
-					<img src="img/sunset.jpg" width="240" height="240" alt="sunset">
-					<div class="description">
-						<h3>SUNSET</h3>
-						<p>Интернет-магазин с личным кабинетом</p>
-						<a class="price" href="#">10 000 Р.</a>
+					<div class="item">
+						<img src="img/avenue.jpg" width="240" height="240" alt="avenue">
+						<div class="description">
+							<h3>AVENUE</h3>
+							<p>Макет для блога о путешествиях</p>
+							<a class="price" href="#">8000 Р.</a>
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/dovetail.jpg" width="240" height="240" alt="dovetail">
+						<div class="description">
+							<h3>DOVETAIL</h3>
+							<p>Интернет-магазин с галереей товаров</p>
+							<a class="price" href="#">14000 Р.</a>
+						</div>
 					</div>
 				</div>
-				<div class="item">
-					<img src="img/forte.jpg" width="240" height="240" alt="forte">
-					<div class="description">
-						<h3>FORTE</h3>
-						<p>Отличный макет для личного блога</p>
-						<a class="price" href="#">5000 Р.</a>
-					</div>
+				<div class="paginator clearfix">
+					<a class="current-page-number" href="#">1</a>
+					<a class="page-number" href="#">2</a>
+					<a class="page-number" href="#">3</a>
+					<a class="next" href="#">Следующая</a>
 				</div>
-				<div class="item">
-					<img src="img/organic.jpg" width="240" height="240" alt="organicr">
-					<div class="description">
-						<h3>Modern Organic Food</h3>
-						<p>Сайт для ресторана быстрого питания</p>
-						<a class="price" href="#">12000 Р.</a>
-					</div>
-				</div>
-				<div class="item">
-					<img src="img/avenue.jpg" width="240" height="240" alt="avenue">
-					<div class="description">
-						<h3>AVENUE</h3>
-						<p>Макет для блога о путешествиях</p>
-						<a class="price" href="#">8000 Р.</a>
-					</div>
-				</div>
-				<div class="item">
-					<img src="img/dovetail.jpg" width="240" height="240" alt="dovetail">
-					<div class="description">
-						<h3>DOVETAIL</h3>
-						<p>Интернет-магазин с галереей товаров</p>
-						<a class="price" href="#">14000 Р.</a>
-					</div>
-				</div>
-			</div>
-			<div class="paginator clearfix">
-				<a class="current-page-number" href="#">1</a>
-				<a class="page-number" href="#">2</a>
-				<a class="page-number" href="#">3</a>
-				<a class="next" href="#">Следующая</a>
-			</div>
 		</div>
 	</main>
 	<footer>
