@@ -416,10 +416,11 @@ header {
 .info p {
     font-size: 16px;
     line-height: 22px;
+    margin-top: 18px;
 }
 .list-left {
     margin-top: 47px;
-    margin-bottom: 
+    
 
 }
 .list-left ul,
@@ -435,4 +436,24 @@ header {
 .list-left li,
 .list-right li {
     padding-bottom: 24px;
+}
+.summary img {
+    padding-left: 40px;
+    padding-top: 14px;
+    padding-bottom: 23px;
+
+}
+.list-left li:nth-child(2),
+.list-right li:nth-child(2) {
+    padding-bottom: 27px;
+}
+.summary b {
+    padding-left: 90px;
+    font-size: 16px;
+    line-height: 8.56px;
+    text-transform: uppercase;
+}
+.list-right {
+    margin-top: 68px;
+    margin-left: 10px;
 }
