@@ -18,6 +18,11 @@ h2 {
 	font-size: 16px;
 	line-height: 30px;
 }
+h3 {
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
 
 header {
 	background: #eeeeee;
@@ -224,7 +229,7 @@ header {
     margin-top: 24px;
     margin-bottom: 80px;
     text-align: center;
-    padding-top: 14px;
+    padding-top: 9px;
 }
 .feature-item img {
     margin-bottom: 6px;
@@ -404,4 +409,30 @@ header {
 }
 .modal-content.show {
     display: block;
+}
+.info, .summary {
+    margin-top: 50px;
+}
+.info p {
+    font-size: 16px;
+    line-height: 22px;
+}
+.list-left {
+    margin-top: 47px;
+    margin-bottom: 
+
+}
+.list-left ul,
+.list-right ul {
+    margin-top: 25px;
+    list-style: none;
+
+}
+.info h1 {
+    display: block;
+    margin-bottom: 0;
+}
+.list-left li,
+.list-right li {
+    padding-bottom: 24px;
 }
