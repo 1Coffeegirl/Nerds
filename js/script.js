@@ -10,15 +10,16 @@ function initMap() {
   	map: map,
   	icon: iconBase
 });
+}
 
 var link = document.querySelector(".write-us");
 var popup = document.querySelector(".modal-content");
 var close = document.querySelector(".modal-content-close");
 
-link.addEventListener ("click"), function (event) {
+link.addEventListener ("click", function(event) {
 	event.preventDefault();
-	popup.classlist.add("show");
+	popup.classList.add("show");
 });
-close.addEventListener("click", function (event) {
-	popup.classlist.remove("show");
+close.addEventListener("click", function(event) {
+	popup.classList.remove("show");
 });
