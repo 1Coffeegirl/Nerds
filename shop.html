@@ -23,7 +23,7 @@
 					</ul>
 				</nav>
 				<div class="user-block">
-					<a href="#" class="basket">
+					<a href="#" class="icon-basket">
 						Корзина
 					</a>
 				</div>
@@ -76,25 +76,24 @@
 						</div>
 						<div class="web">
 							<h2>Сетка</h2>
-							<label for="adaptive">
-								<input type="radio" name="adaptive" id="adaptive" checked>Адаптативная</label><br>
-							<label for="fix">
-								<input type="radio" name="fix" id="fix">Фиксированная</label>
-							<label><br>
-								<input type="radio" name="rubber" id="rubber">Резиновая</label>
+							<input type="radio" name="adaptive" id="adaptive" checked>
+							<label for="adaptive">Адаптативная</label><br>
+							<input type="radio" name="fix" id="fix">
+							<label for="fix">Фиксированная</label><br>
+							<input type="radio" name="rubber" id="rubber">
+							<label for="rubber">Резиновая</label>
 						</div>
 						<div class="special">
 							<h2>Особенности</h2>
-							<label for="slider">
-								<input type="checkbox" name="slider" id="slider" checked>Слайдер</label><br>
-							<label for="features">
-								<input type="checkbox" name="features" id="features">Блок преимуществ</label><br>
-							<label for="news">
-								<input type="checkbox" name="news" id="news" checked>Новости</label><br>
-							<label for="gallery">
-								<input type="checkbox" name="gallery" id="gallery">Галерея</label><br>
-							<label for="cart">
-								<input type="checkbox" name="cart" id="cart">Корзина</label>
+							<input type="checkbox" name="slider" id="slider" checked>
+							<label for="slider">Слайдер</label><br>			
+							<input type="checkbox" name="features" id="features">
+							<label for="features">Блок преимуществ</label><br>
+							<input type="checkbox" name="news" id="news" checked>
+							<label for="news">Новости</label><br>
+							<input type="checkbox" name="gallery" id="gallery">
+							<label for="gallery">Галерея</label><br>
+							<input type="checkbox" name="cart" id="cart"><label for="cart">Корзина</label>
 						</div>
 						<input type="submit" value="Показать">
 					</form>
@@ -150,56 +149,70 @@
 						</div>
 					</div>
 				</div>
-				<div class="paginator clearfix">
-					<a class="current-page-number" href="#">1</a>
-					<a class="page-number" href="#">2</a>
-					<a class="page-number" href="#">3</a>
-					<a class="next" href="#">Следующая</a>
+				<div class="paginator-block clearfix">
+					<ul class="paginator-list">
+						<li class="page active">1</li>
+						<li class="page">
+							<a href="#">2</a>
+						</li>
+						<li class="page">
+							<a href="#">3</a>
+						</li>
+						<li class="page next">
+							<a href="#">Следующая</a>
+						</li>
+					</ul>
 				</div>
 		</div>
 	</main>
-	<footer>
-		<div class="map clearfix">
-			<div class="contacts">
-				<b>Nёrds design studio</b>
-				<p>	
-					191186, Санкт-Петербург,
-					ул. Б. Конюшенная, д. 19/8
-					тел. +7 (812) 275-75-75
-				</p>
-				<a href="#" class="write-us">Напишите нам</a>
+<footer>
+			<div class="map clearfix">
+			<div id="map" class="map-js"></div>
+				<div class="contaner contacts-wrap">
+					<div class="contacts">
+						<b>Nёrds design studio</b>
+						<p>	
+							191186, Санкт-Петербург,<br>
+							ул. Б. Конюшенная, д. 19/8
+						</p>
+						<span class="tel"> тел. +7 (812) 275-75-75</span><br>
+						<a href="#" class="write-us">Напишите нам</a>
+					</div>
+				</div>
 			</div>
-			<div class="marker">
-				<img src="img/marker.png" alt="marker" width="231" height="190">
+			<div class="contaner">
+				<div class="social">
+					<a href="#" class="social-btn social-btn-vk"></a>
+					<a href="#" class="social-btn social-btn-fb"></a>
+					<a href="#" class="social-btn social-btn-inst"></a>
+				</div>
+				<div class="social-text">
+					<h3 class="social-heading">Давайте дружить, это выгодно!</h3>
+					<p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+				</div>
 			</div>
+		</footer>
+		<div class="modal-content">
+			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+			<form class="login-form" action="#" method="post">
+				<div class="name-modal effect-modal">
+					<label for="name-id">Ваше имя:</label>
+					<input id="name-id" class="icon-user" type="text" name="names" placeholder="Представьтесь, пожалуйста">
+				</div>
+				<div class="email effect-modal">
+					<label for="email">Ваш e-mail:</label>
+					<input id="email" class="icon-email" type="email" name="email" placeholder="Для отправки ответа">
+				</div>
+				<div class="text-letter-form effect-modal">
+					<label for="label-modal">Текст письма:</label>
+					<textarea id="label-modal" class="icon-text"  name="letter" placeholder="В свободной форме"></textarea>
+				</div>
+				<button class="send" type="submit">Отправить</button>
+			</form>
 		</div>
-		<div class="social">
-			<a href="#" class="social-btn social-btn-vk"></a>
-			<a href="#" class="social-btn social-btn-fb"></a>
-			<a href="#" class="social-btn social-btn-inst"></a>
-		</div>
-		<div class="social-text">
-			<h3 class="social-heading">Давайте дружить, это выгодно!</h3>
-			<p class="discount">Скидка 10% для друзей из социальных сетей.</p>
-		</div>
-	</footer>
-	<div class="modal-content">
-		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-		<form class="login-form" action="#" method="post">
-			<div class="name-modal effect-modal">
-				<label for="name-id">Ваше имя:</label>
-				<input id="name-id" class="icon-user" type="text" name="names" placeholder="Представьтесь, пожалуйста">
-			</div>
-			<div class="email effect-modal">
-				<label for="email">Ваш e-mail:</label>
-				<input id="email" class="icon-email" type="email" name="email" placeholder="Для отправки ответа">
-			</div>
-			<div class="text-letter-form effect-modal">
-				<label for="label-modal">Текст письма:</label>
-				<textarea id="label-modal" class="icon-text"  name="letter" placeholder="В свободной форме"></textarea>
-			</div>
-			<button class="send" type="submit">Отправить</button>
 		</form>
 	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer"></script>
 </body>
 </html>
