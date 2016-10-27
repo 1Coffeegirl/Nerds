@@ -263,18 +263,19 @@ header {
     line-height: 22px;
 
 }
-.feature-item a {
+.feature-item a,
+.btn-contacts {
     display: block;
     width: 140px;
     text-decoration: none;
-    height: 25px;
     border-radius: 3px;
     color: #ffffff;
     margin-top: 24px;
     margin-bottom: 80px;
     text-align: center;
-    padding-top: 9px;
+    line-height: 32px;
 }
+
 .feature-item img {
     margin-bottom: 6px;
 }
@@ -427,6 +428,7 @@ header {
 .item {
     width: 240px;
     position: relative;
+    margin-bottom: 80px;
 }
 .item:nth-child(odd) {
     float: left;
@@ -565,9 +567,11 @@ header {
 }
 
 .range-controls .bar {
-  width: 70%;
   height: 2px;
   background: #00ca74;
+  width: 60%;
+  
+  
 }
 
 .range-controls .toggle {
@@ -584,11 +588,11 @@ header {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 17px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 150px;
 }
 
 .price-controls {
@@ -624,16 +628,38 @@ header {
 }
 .description {
     width: 200px;
+    height: 150px;
     position: absolute;
     top: 50px;
     left: 20px;
     padding-top: 34px;
-    padding-bottom: 29px;
     background-color: #ffffff;
     color: #283136;
     text-align: center;
     display: none;
 }
+.description h3 {
+  margin-top: 0;
+}
+
+.description a {
+  display: block;
+  width: 140px;
+  margin-left: 30px;
+  text-decoration: none;
+  background-color: #fb565a;
+  border-radius: 5px 5px 5px 5px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 38px;
+
+}
+.description p {
+  text-align: center;
+  font-size: 14px;
+  margin: 0 20px 20px 0;
+}
+
 .paginator-block {
     clear: both;
     min-width: 300px;
@@ -691,14 +717,15 @@ header {
 }
 
 .btn-contacts {
-  display: block;
+/*  display: block;
   width: 140px;
   margin-top: 27px;
   margin-right: 6px;
   padding-top: 11px;
   padding-bottom: 11px;
-  line-height: 18px;
+  line-height: 18px;*/
   background-color: #fb565a;
+  margin-left: 48px;
 
 }
 .btn-contacts:hover {
@@ -1072,4 +1099,32 @@ textarea {
 .special input[type="checkbox"]:checked +label::before {
   content: "\2611";
   color: #c1c1c1;
+}
+
+/* grey panel */
+.deco {
+  width: 100%;
+  height: 30px;
+  background-color: #f1f1f1;
+  border-radius: 5px 5px 0 0;
+}
+.deco span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  color: #ffffff;
+  border-radius: 50px;
+  margin-right: 5px;
+  
+}
+
+li:before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 20px;
+  color: red;
+  position: absolute;
+  left: -34px;
+  top: 8px;
 }
